@@ -1,13 +1,14 @@
-<html ng-app="interactivemap">
+<html>
 <head>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<script src="script-tags-for-development.js"></script>
-    <script src="lib/angularroute.js"></script>
+	<script src="lib/angularroute.js"></script>
 	<script src="changepage.js"></script>
+	<script>var rootApp = angular.module('rootApp', ['interactivemap','ngMap'])</script>
 <title>Interactive Map</title>
 </head>
 
-<body ng-controller="mainController">
+<body ng-app="rootApp">
 
 
 
@@ -27,14 +28,17 @@
 
 </div>
 
-<div id="mapsection">
+<!-- <div id="mapsection">
 <ng-map zoom="11" center="41.875696,-87.624207">
     <kml-layer url="https://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml">
     </kml-layer>
   </ng-map>
-</div>
+</div> -->
 
-<div ng-view></div>
+
+<div ng-app="interactivemap" ng-controller="mainController">
+
+
 
 
 <header>
@@ -45,13 +49,17 @@
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#cycle"><i class="fa fa-shield"></i> Cycling routes</a></li>
+                    <li><a href="#sights"><i class="fa fa-comment"></i> Sights to see</a></li>
                 </ul>
             </div>
             </nav>
         </header>
+
+        <div ng-view></div>
+
+</div>
 
 </body>
 </html>

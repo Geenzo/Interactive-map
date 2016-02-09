@@ -1,6 +1,12 @@
 <!-- home.html -->
-    <div class="jumbotron text-center">
-        <h1>Home Page</h1>
+    <div id="mapsection" class="jumbotron text-center">
+        <h1>Welcome to the an interactive map of Scotland</h1>
 
-        <p>{{ message }}</p>
+        <h3>This map has hiking routes around Scotland on it!</h3>
+
+       <ng-map zoom="11" center="41.875696,-87.624207">
+    <kml-layer url="https://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml">
+    </kml-layer>
+  		</ng-map>
+
     </div>

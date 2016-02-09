@@ -12,15 +12,15 @@
                 controller  : 'mainController'
             })
 
-            // route for the about page
-            .when('/about', {
-                templateUrl : 'pages/about.html',
+            // route for the cycle page
+            .when('/cycle', {
+                templateUrl : 'pages/cycle.html',
                 controller  : 'aboutController'
             })
 
-            // route for the contact page
-            .when('/contact', {
-                templateUrl : 'pages/contact.html',
+            // route for the sights page
+            .when('/sights', {
+                templateUrl : 'pages/sights.html',
                 controller  : 'contactController'
             });
     });
