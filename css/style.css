@@ -6,7 +6,7 @@
 
 #topbar {
 	width:100%;
-	height: 20%;
+	height: 70px;
 	background-color: #44619d;
 	color: #ffffff;
 	box-shadow: 10px 10px 5px #888888;
@@ -30,7 +30,7 @@
 
 	line-height:30px;
     background-color: #44619d;
-    height:600px;
+    height:90%;
     width:100px;
     float:left;
     padding:5px;
