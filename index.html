@@ -21,7 +21,7 @@
 
 
 
-<div id="leftbar">
+<div id="leftbar" class="col-md-8">
 
 <ul id="socialmedia">
 <li><a href="www.facebook.com"><img src="placeholder.html"></a></li>
@@ -39,28 +39,33 @@
 </div> -->
 
 
-<div ng-app="interactivemap" ng-controller="mainController">
+<div ng-app="interactivemap" ng-controller="mainController" class="col-md-8">
 
 
 
 
 <header>
-            <nav class="navbar navbar-default">
-            <div class="container">
+            <nav class="navbar navbar-default" style="margin-top:20px;">
+            <div class="container" style="width:90%;">
                 <div class="navbar-header">
-                    <a class="navbar-brand" >Angular Routing Example</a>
+                   <h3>Click to change the routes you would like to see!</h3>
                 </div>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
-                    <li><a href="#cycle"><i class="fa fa-shield"></i> Cycling routes</a></li>
-                    <li><a href="#sights"><i class="fa fa-comment"></i> Sights to see</a></li>
+<!-- 
+                <button type="button" class="btn btn-default navbar-btn" href="#/">Home </button>
+                <button type="button" class="btn btn-default navbar-btn" href="#cycle">Cycling routes </button>
+                <button type="button" class="btn btn-default navbar-btn" href="#sights">Sights to see </button>
+ --> 
+                <ul class="nav navbar-nav">
+                    <li class="btn-default"><a href="#/"><i class="fa fa-home"></i> Hiking routes</a></li>
+                    <li class="btn-default"><a href="#cycle"><i class="fa fa-shield"></i> Cycling routes</a></li>
+                    <li class="btn-default"><a href="#sights"><i class="fa fa-comment"></i> Sights to see</a></li>
                 </ul>
+</nav>
             </div>
-            </nav>
+           
         </header>
-
-        <div ng-view></div>
+        
+        <div ng-view ></div>
 
 </div>
 
