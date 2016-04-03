@@ -7,8 +7,451 @@
         <h3>This map has Sights to see around Scotland on it!</h3>
 
        <ng-map zoom="6" center="55.857657, -4.251656">
-    <kml-layer url="">
-    </kml-layer>
+
+      <!-- Edinburgh castle infowindow -->
+      <marker id="edcastle" position="55.948700, -3.199935"
+        on-click="map.showInfoWindow(event, 'edcastle')">
+      </marker>
+      <info-window id="edcastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Edinburgh Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Edinburgh Castle</b>, An 11th-century castle and barracks housing the Crown Jewels and National War Museum of Scotland.
+            </p>
+            <p>Attribution: Edinburgh Castle,
+            <a href="https://en.wikipedia.org/wiki/Edinburgh_Castle">
+              https://en.wikipedia.org/wiki/Edinburgh_Castle
+            </a>
+			</p>
+          </div>
+        </div>
+      </info-window>
+
+
+      <!-- Stirling castle infowindow -->
+            <marker id="stcastle" position="56.124353, -3.947514"
+        on-click="map.showInfoWindow(event, 'stcastle')">
+      </marker>
+      <info-window id="stcastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Stirling Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Stirling Castle</b>, 12th-century castle and former Renaissance royals palace, with great hall and regimental museum.
+            </p>
+            <p>Attribution: Stirling Castle,
+            <a href="http://www.nms.ac.uk/">
+              http://www.nms.ac.uk/
+            </a>
+			</p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- National Museum of Scotland -->
+      <marker id="scmuseum" position="55.946985, -3.190533"
+        on-click="map.showInfoWindow(event, 'scmuseum')">
+      </marker>
+      <info-window id="scmuseum" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">National Museum of Scotland</h1>
+          <div id="bodyContent">
+            <p>
+            <b>National Museum of Scotland</b>, Bright modern museum housing Scottish industrial history relics, natural history displays and cafe.
+            </p>
+            <p>Attribution: National Museum of Scotland,
+            <a href="https://en.wikipedia.org/wiki/Stirling_Castle">
+              https://en.wikipedia.org/wiki/Stirling_Castle
+            </a>
+			</p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Kelvingrove Art Gallery and Museum -->
+      <marker id="kgmuseum" position="55.869035, -4.290818"
+        on-click="map.showInfoWindow(event, 'kgmuseum')">
+      </marker>
+      <info-window id="kgmuseum" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Kelvingrove Art Gallery and Museum</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Kelvingrove Art Gallery and Museum</b>, Impressive sights of diverse Scottish and international art with museum and interactive displays.
+            </p>
+            <p>Attribution: Kelvingrove Art Gallery and Museum,
+            <a href="https://glasgowlife.org.uk">
+              https://glasgowlife.org.uk
+            </a>
+			</p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- New Lanark -->
+      <marker id="NewLanark" position="55.663648, -3.782329"
+        on-click="map.showInfoWindow(event, 'NewLanark')">
+      </marker>
+      <info-window id="NewLanark" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">New Lanark</h1>
+          <div id="bodyContent">
+            <p>
+            <b>New Lanark</b>, Cotton mill industrial heritage site and village, with a large roof garden offering panoramic views.
+            </p>
+            <p>Attribution: New Lanark,
+            <a href="https://newlanark.org">
+              https://newlanark.org
+            </a>
+			</p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Science Centre -->
+      <marker id="sciencecentre" position="55.859060, -4.293975"
+        on-click="map.showInfoWindow(event, 'sciencecentre')">
+      </marker>
+      <info-window id="sciencecentre" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Glasgow Science Centre</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Glasgow Science Centre</b>, Science technology museum offering interactive exhibits, plus a planetarium, IMAX theatre & cafes.
+            </p>
+            <p>Attribution: Glasgow Science Centre,
+            <a href="https://glasgowsciencecentre.org">
+              https://glasgowsciencecentre.org
+            </a>
+			</p>
+          </div>
+        </div>
+      </info-window>
+
+       <!-- The Falkirk Wheel -->
+      <marker id="FalkirkWheel" position="56.000896, -3.841624"
+        on-click="map.showInfoWindow(event, 'FalkirkWheel')">
+      </marker>
+      <info-window id="FalkirkWheel" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">The Falkirk Wheel</h1>
+          <div id="bodyContent">
+            <p>
+            <b>The Falkirk Wheel</b>, Innovative and unique rotating boat lift connecting the Forth and Clyde Canal with the Union Canal.
+            </p>
+            <p>Attribution: The Falkirk Wheel,
+            <a href="https://thefalkirkwheel.co.uk">
+              https://thefalkirkwheel.co.uk
+            </a>
+			</p>
+          </div>
+        </div>
+      </info-window>
+
+         <!-- Dunrobin Castle -->
+      <marker id="DunrobinCastle" position="57.982948, -3.949046"
+        on-click="map.showInfoWindow(event, 'DunrobinCastle')">
+      </marker>
+      <info-window id="DunrobinCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Dunrobin Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Dunrobin Castle</b>, Turreted, opulent castle, Clan Sutherland's home since the 1400s, with museum and falconry displays.
+            </p>
+            <p>Attribution: Dunrobin Castle,
+            <a href="https://dunrobincastle.co.uk">
+              https://dunrobincastle.co.uk
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+
+         <!-- Cawdor Castle -->
+      <marker id="CawdorCastle" position="57.523275, -3.933117"
+        on-click="map.showInfoWindow(event, 'CawdorCastle')">
+      </marker>
+      <info-window id="CawdorCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Cawdor Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Cawdor Castle</b>, 14th-century castle linked to Macbeth, as thane of Cawdor, with drawbridge, tapestries and gardens. 
+            </p>
+            <p>Attribution: Cawdor Castle,
+            <a href="https://cawdorcastle.com">
+              https://cawdorcastle.com
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Brodie Castle -->
+      <marker id="BrodieCastle" position="57.597887, -3.713253"
+        on-click="map.showInfoWindow(event, 'BrodieCastle')">
+      </marker>
+      <info-window id="BrodieCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Brodie Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Brodie Castle</b>, Restored 16th-century castle and gardens with Clan Brodie collection of antiques, art and ceramics.
+            </p>
+            <p>Attribution: Brodie Castle,
+            <a href="https://nts.org.uk">
+              https://nts.org.uk
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Eilean Donan Castle -->
+      <marker id="EileanDonanCastle" position="57.273910, -5.516191"
+        on-click="map.showInfoWindow(event, 'EileanDonanCastle')">
+      </marker>
+      <info-window id="EileanDonanCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Eilean Donan Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Eilean Donan Castle</b>, Tours of fully restored castle on an island where 3 lochs meet, dating from the 13th century.
+            </p>
+            <p>Attribution: Eilean Donan Castle,
+            <a href="https://eileandonancastle.com">
+              https://eileandonancastle.com
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Armadale Castle -->
+      <marker id="ArmadaleCastle" position="57.062238, -5.903233"
+        on-click="map.showInfoWindow(event, 'ArmadaleCastle')">
+      </marker>
+      <info-window id="ArmadaleCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Armadale Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Armadale Castle</b>, Tours of fully restored castle on an island, dating from the 13th century.
+            </p>
+            <p>Attribution: Armadale Castle,
+            <a href="https://clandonald.com">
+              https://clandonald.com
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Dunvegan Castle -->
+      <marker id="DunveganCastle" position="57.448438, -6.590064"
+        on-click="map.showInfoWindow(event, 'DunveganCastle')">
+      </marker>
+      <info-window id="DunveganCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Dunvegan Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Dunvegan Castle</b>, Oldest continuously inhabited castle in Scotland, with tours, gardens and boat-trips to seal colony.
+            </p>
+            <p>Attribution: Dunvegan Castle,
+            <a href="https://dunvegancastle.com">
+              https://dunvegancastle.com
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Urquhart Castle -->
+      <marker id="UrquhartCastle" position="57.324194, -4.442011"
+        on-click="map.showInfoWindow(event, 'UrquhartCastle')">
+      </marker>
+      <info-window id="UrquhartCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Urquhart Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Urquhart Castle</b>, Large, ruined castle dating from 1509, overlooking Loch Ness, with visitor centre and cafe.
+            </p>
+            <p>Attribution: Urquhart Castle,
+            <a href="https://historic-scotland.gov.uk">
+              https://historic-scotland.gov.uk
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Glamis Castle -->
+      <marker id="GlamisCastle" position="56.620151, -3.001705"
+        on-click="map.showInfoWindow(event, 'GlamisCastle')">
+      </marker>
+      <info-window id="GlamisCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Glamis Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Glamis Castle</b>, 14th-century castle and late Queen Mother's childhood home with guided tours of lavish interiors. 
+            </p>
+            <p>Attribution: Glamis Castle,
+            <a href="https://glamis-castle.co.uk">
+              https://glamis-castle.co.uk
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+       <!-- Dunnottar Castle -->
+      <marker id="DunnottarCastle" position="56.945889, -2.196557"
+        on-click="map.showInfoWindow(event, 'DunnottarCastle')">
+      </marker>
+      <info-window id="DunnottarCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Dunnottar Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Dunnottar Castle</b>, Fortified cluster of ruined stone buildings with a long history, in a dramatic clifftop setting. 
+            </p>
+            <p>Attribution: Dunnottar Castle,
+            <a href="https://dunnottarcastle.co.uk">
+              https://dunnottarcastle.co.uk
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+       <!-- Cawdor Castle -->
+      <marker id="CawdorCastle" position="57.524199, -3.926691"
+        on-click="map.showInfoWindow(event, 'CawdorCastle')">
+      </marker>
+      <info-window id="CawdorCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Cawdor Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Cawdor Castle</b>, 14th-century castle linked to Macbeth, as thane of Cawdor, with drawbridge, tapestries and gardens.
+            </p>
+            <p>Attribution: Cawdor Castle,
+            <a href="https://cawdorcastle.com">
+              https://cawdorcastle.com
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Inveraray Castle -->
+      <marker id="InverarayCastle" position="56.237429, -5.073695"
+        on-click="map.showInfoWindow(event, 'InverarayCastle')">
+      </marker>
+      <info-window id="InverarayCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Inveraray Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Inveraray Castle</b>, 18th-century, Gothic-style Clan Campbell castle home, with tapestry collection in lavish interiors.
+            </p>
+            <p>Attribution: Inveraray Castle,
+            <a href="https://inveraray-castle.com">
+              https://inveraray-castle.com
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Blair Castle -->
+      <marker id="BlairCastle" position="56.766944, -3.845676"
+        on-click="map.showInfoWindow(event, 'BlairCastle')">
+      </marker>
+      <info-window id="BlairCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Blair Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Blair Castle</b>, Castle dating from 1269 with lavish rooms housing antiques, art and armour, plus walled garden.
+            </p>
+            <p>Attribution: Blair Castle,
+            <a href="https://blair-castle.co.uk">
+              https://blair-castle.co.uk
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Balmoral Castle -->
+      <marker id="BalmoralCastle" position="57.039661, -3.229235"
+        on-click="map.showInfoWindow(event, 'BalmoralCastle')">
+      </marker>
+      <info-window id="BalmoralCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Balmoral Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Balmoral Castle</b>, Scottish Baronial style mansion and summer home of the royal family, with ballroom art collection.
+            </p>
+            <p>Attribution: Balmoral Castle,
+            <a href="https://balmoralcastle.com">
+              https://balmoralcastle.com
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+      <!-- Braemar Castle -->
+      <marker id="BraemarCastle" position="57.014671, -3.391413"
+        on-click="map.showInfoWindow(event, 'BraemarCastle')">
+      </marker>
+      <info-window id="BraemarCastle" max-width="200">
+        <div ng-non-bindable>
+          <div id="siteNotice"></div>
+          <h1 id="firstHeading" class="firstHeading">Braemar Castle</h1>
+          <div id="bodyContent">
+            <p>
+            <b>Braemar Castle</b>, Elegant 17th-century castle, owned by the chief of Clan Farquharson and containing many antiques.
+            </p>
+            <p>Attribution: Braemar Castle,
+            <a href="https://braemarcastle.co.uk">
+              https://braemarcastle.co.uk
+            </a>
+      </p>
+          </div>
+        </div>
+      </info-window>
+
+
   		</ng-map>
 
 <!--end of container div-->
