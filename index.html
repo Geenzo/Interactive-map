@@ -7,7 +7,9 @@
 	<script src="script-tags-for-development.js"></script>
 	<script src="lib/angularroute.js"></script>
 	<script src="changepage.js"></script>
-	<script>var rootApp = angular.module('rootApp', ['interactivemap','ngMap'])</script>
+	<script>
+    var rootApp = angular.module('rootApp', ['interactivemap','ngMap']);
+    </script>
 <title>Interactive Map</title>
 </head>
 
@@ -30,13 +32,6 @@
 </ul>
 
 </div>
-
-<!-- <div id="mapsection">
-<ng-map zoom="11" center="41.875696,-87.624207">
-    <kml-layer url="https://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml">
-    </kml-layer>
-  </ng-map>
-</div> -->
 
 
 <div ng-app="interactivemap" ng-controller="mainController" class="col-md-9">

@@ -8,6 +8,15 @@
 
        <ng-map zoom="6" center="55.857657, -4.251656">
     <bicycling-layer></bicycling-layer>
+
+    <!-- Geolocation on load section for maps -->
+    <div id="geolocation">
+     <marker id="currentplace" position="current-location" icon="images/home.png" on-click="map.showInfoWindow(event, 'currentplace')" >
+      </marker>
+   <info-window id="currentplace" position="current-location">
+      <span>This is your current location!</span>
+    </info-window> </div> 
+
   		</ng-map>
 
 <!--end of container div -->

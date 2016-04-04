@@ -8,6 +8,15 @@
 
        <ng-map zoom="6" center="55.857657, -4.251656">
 
+          <!-- Geolocation on load section for maps -->
+    <div id="geolocation">
+     <marker id="currentplace" position="current-location" icon="images/home.png" on-click="map.showInfoWindow(event, 'currentplace')" >
+      </marker>
+   <info-window id="currentplace" position="current-location">
+      <span>This is your current location!</span>
+    </info-window> </div> 
+
+
       <!-- Edinburgh castle infowindow -->
       <marker id="edcastle" position="55.948700, -3.199935"
         on-click="map.showInfoWindow(event, 'edcastle')">
