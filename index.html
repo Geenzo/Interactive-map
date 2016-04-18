@@ -1,17 +1,16 @@
-<html>
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
-	<script src="script-tags-for-development.js"></script>
-	<script src="lib/angularroute.js"></script>
-	<script src="changepage.js"></script>
-  <script src="lib/jquery.js"></script>
-	<script>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css"/>
+	<script type="text/javascript" src="script-tags-for-development.js"></script>
+	<script type="text/javascript" src="lib/angularroute.js"></script>
+	<script type="text/javascript" src="changepage.js"></script>
+  <script type="text/javascript" src="lib/jquery.js"></script>
+	<script type="text/javascript" >
     var rootApp = angular.module('rootApp', ['interactivemap','ngMap']);
     </script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Interactive Map</title>
 </head>
 
@@ -25,9 +24,9 @@
 <div id="leftbar" class="col-lg-8">
 
 <ul id="socialmedia">
-<li><a href="https://www.facebook.com/ScotWalk" ><img src="images/facebook.png" style="height:40px;"></a></li>
-<li><a href="https://www.twitter.com"><img src="images/twitter.png" style="height:40px;"></a></li>
-<li><a href="mailto:owner@scotwalk.com"><img src="images/email.png" style="height:40px;"></a></li>
+<li><a href="https://www.facebook.com/ScotWalk" ><img src="images/facebook.png" style="height:40px;" alt="facebook"/></a></li>
+<li><a href="https://www.twitter.com"><img src="images/twitter.png" style="height:40px;" alt="twitter"/></a></li>
+<li><a href="mailto:owner@scotwalk.com"><img src="images/email.png" style="height:40px;" alt="Email"/></a></li>
 </ul>
 
 </div>
@@ -49,10 +48,10 @@
                     <li class="btn-default"><a href="#cycle"><i class="fa fa-shield"></i> Cycling routes</a></li>
                     <li class="btn-default"><a href="#sights"><i class="fa fa-comment"></i> Sights to see</a></li>
                 </ul>
-                </br>
-                </br>
-                </br>
-                </br>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <div ng-view></div>
             </div>    
 </nav>
