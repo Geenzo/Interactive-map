@@ -15,26 +15,26 @@
             // route for the cycle page
             .when('/cycle', {
                 templateUrl : 'pages/cycle.html',
-                controller  : 'aboutController'
+                controller  : 'cycleController'
             })
 
             // route for the sights page
             .when('/sights', {
                 templateUrl : 'pages/sights.html',
-                controller  : 'contactController'
+                controller  : 'sightController'
             });
     });
 
     // create the controller and inject Angular's $scope
     interactivemap.controller('mainController', function($scope) {
         // create a message to display in our view
-        $scope.message = 'Everyone come and see how good I look!';
+        $scope.message = 'hiking routes';
     });
 
-    interactivemap.controller('aboutController', function($scope) {
-        $scope.message = 'Look! I am an about page.';
+    interactivemap.controller('cycleController', function($scope) {
+        $scope.message = 'Cycling routes';
     });
 
-    interactivemap.controller('contactController', function($scope) {
-        $scope.message = 'Contact us! JK. This is just a demo.';
+    interactivemap.controller('sightController', function($scope) {
+        $scope.message = 'Sights to see';
     });
