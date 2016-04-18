@@ -7,21 +7,22 @@
 	<script src="script-tags-for-development.js"></script>
 	<script src="lib/angularroute.js"></script>
 	<script src="changepage.js"></script>
+  <script src="lib/jquery.js"></script>
 	<script>
     var rootApp = angular.module('rootApp', ['interactivemap','ngMap']);
     </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Interactive Map</title>
 </head>
 
 <body ng-app="rootApp">
 
 <div id="topbar" class="container-fluid">
-	<h1 id="header" style="padding-top: 10px; font-weight: bold;">Interactive Map</h1>
+	<h1 id="header" style=" font-weight: bold;">Interactive Map</h1>
 </div>
 
 
-
-<div id="leftbar" class="col-md-8">
+<div id="leftbar" class="col-lg-8">
 
 <ul id="socialmedia">
 <li><a href="https://www.facebook.com/ScotWalk" ><img src="images/facebook.png" style="height:40px;"></a></li>
@@ -31,35 +32,34 @@
 
 </div>
 
-
-<div ng-app="interactivemap" ng-controller="mainController" class="col-md-9">
+<div ng-app="interactivemap" ng-controller="mainController" class="container">
 
 
 
 
 <header>
             <nav class="navbar navbar-default" style="margin-top:20px;">
-            <div class="container" style="width:90%;">
-                <div class="navbar-header" >
+            <div class="container text-center" >
+                <div>
                    <h3>Click to change the routes you would like to see!</h3>
                 </div>
-<!-- 
-                <button type="button" class="btn btn-default navbar-btn" href="#/">Home </button>
-                <button type="button" class="btn btn-default navbar-btn" href="#cycle">Cycling routes </button>
-                <button type="button" class="btn btn-default navbar-btn" href="#sights">Sights to see </button>
- --> 
-                <ul class="nav navbar-nav">
-                    <li class="btn-default"><a href="#/"><i class="fa fa-home"></i> Hiking routes</a></li>
+
+                <ul class="nav navbar-nav text-center">
+                    <li class="btn-default" ><a href="#/"><i class="fa fa-home"></i> Hiking routes</a></li>
                     <li class="btn-default"><a href="#cycle"><i class="fa fa-shield"></i> Cycling routes</a></li>
                     <li class="btn-default"><a href="#sights"><i class="fa fa-comment"></i> Sights to see</a></li>
                 </ul>
+                </br>
+                </br>
+                </br>
+                </br>
+                <div ng-view></div>
+            </div>    
 </nav>
-            </div>
            
         </header>
         
-        <div ng-view class="col-md-8"></div>
-
+        
 </div>
 
 </body>
